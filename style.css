@@ -71,6 +71,7 @@ body {
 .remover {
     background-color: #009cfd;
     color: white;
+    width: 120px;
     border: none;
     padding: 10px 20px;
     margin: 10px;
@@ -88,6 +89,7 @@ body {
 .limpar {
     background-color: #f34f25;
     color: white;
+    width: 120px;
     border: none;
     padding: 10px 20px;
     margin: 10px;
