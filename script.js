@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function processKey() {
     const inputKey = document.getElementById('inputKey').value;
-    const processedKey = inputKey.replace(/[\s\.\-\_]/g, '');
+    const processedKey = inputKey.replace(/[\s\.,\-\_]/g, ''); // Atualizado para remover vírgulas também
     document.getElementById('outputKey').value = processedKey;
     updateUsageCount();
 }
@@ -45,6 +45,7 @@ function updateUsageCount() {
     document.getElementById('usageCount').textContent = usageCount;
     localStorage.setItem('usageCount', usageCount);  // Armazena o contador localmente
 }
+
 
 
 
