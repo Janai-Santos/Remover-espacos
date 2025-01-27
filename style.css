@@ -1,0 +1,162 @@
+body {
+    font-family: poppins, roboto, Arial, sans-serif;
+    background: linear-gradient(-45deg, #9cb9ab, #ffffff, #9cb9ab, #ffffff);
+    background-size: 400% 400%;
+    animation: gradientBackground 10s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-weight: 600;
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    background-color: #004d96;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 45%;
+    max-width: 1000px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    font-size: 11px;
+    font-family: poppins, roboto, Arial, sans-serif;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: poppins, roboto, Arial, sans-serif;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+.main-content input[type="text"] {
+    width: 400px;
+    max-width: 600px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: poppins, roboto, Arial, sans-serif;
+    font-weight: 600;
+    color: rgb(40, 35, 45);
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.remover {
+    background-color: #009cfd;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.53s;
+    font-weight: 600;
+    font-family: poppins, roboto, Arial, sans-serif;
+}
+
+.remover:hover {
+    background-color: #0185d7;
+}
+
+.limpar {
+    background-color: #f34f25;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 600;
+    font-family: poppins, roboto, Arial, sans-serif;
+}
+
+.limpar:hover {
+    background-color: #d4401f;
+}
+
+.copiar {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 600;
+    font-family: poppins, roboto, Arial, sans-serif;
+}
+
+.copiar:hover {
+    background-color: #3a883e;
+}
+
+.main-button:hover {
+    background-color: #45a049;
+}
+
+#buttons-container {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.sidebar-button:hover {
+    background-color: #007bb5;
+}
+
+.popup {
+    visibility: hidden;
+    width: 110px;
+    background-color: rgba(0, 255, 0, 0.368);
+    color: rgba(241, 239, 239, 0.731);
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 10px;
+    padding: 5px;
+    opacity: 1;
+    transition: opacity 2s;
+    font-size: 12px;
+}
+
+.popup.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+
