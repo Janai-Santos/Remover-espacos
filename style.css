@@ -1,165 +1,174 @@
 body {
-    font-family: poppins, roboto, Arial, sans-serif;
-    background: linear-gradient(-45deg, #9cb9ab, #ffffff, #9cb9ab, #ffffff);
-    background-size: 400% 400%;
-    animation: gradientBackground 10s ease infinite;
+    background-color: #303e48;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    font-weight: 600;
-}
-
-@keyframes gradientBackground {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+    padding: 0;
+    font-family: poppins;
 }
 
 .container {
-    background-color: #003c80;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 45%;
-    max-width: 1000px;
-    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    height: 90%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #ffffff;
-    font-size: 11px;
-    font-family: poppins, roboto, Arial, sans-serif;
-}
-
-.main-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-    font-family: poppins, roboto, Arial, sans-serif;
-    font-weight: 600;
-    color: rgb(255, 255, 255);
-}
-
-.main-content input[type="text"] {
-    width: 400px;
-    max-width: 600px;
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 19px;
-    font-family: poppins, roboto, Arial, sans-serif;
-    font-weight: 600;
-    color: #003c80;
-}
-
-.button-container {
-    display: flex;
-    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-family: poppins;
 }
 
-.remover {
-    background-color: #009cfd;
-    color: white;
-    width: 120px;
-    border: none;
-    padding: 10px 20px;
-    margin: 10px;
-    border-radius: 15px;
-    cursor: pointer;
-    transition: background-color 0.53s;
-    font-weight: 600;
-    font-family: poppins, roboto, Arial, sans-serif;
+.app {
+    width: 110%;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px; /* Espaçamento aumentado */
+    font-family: poppins;
 }
 
-.remover:hover {
-    background-color: #0185d7;
-}
-
-.limpar {
-    background-color: #f34f25;
-    color: white;
-    width: 120px;
-    border: none;
-    padding: 10px 20px;
-    margin: 10px;
-    border-radius: 15px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    font-weight: 600;
-    font-family: poppins, roboto, Arial, sans-serif;
-}
-
-.limpar:hover {
-    background-color: #d4401f;
-}
-
-.copiar {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 10px;
-    border-radius: 15px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    font-weight: 600;
-    font-family: poppins, roboto, Arial, sans-serif;
-}
-
-.copiar:hover {
-    background-color: #3a883e;
-}
-
-.main-button:hover {
-    background-color: #45a049;
-}
-
-#buttons-container {
-    position: absolute;
-    right: 20px;
-    top: 20px;
+.app-section {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    background-color: #1f2b33;
+    padding: 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family: poppins;
 }
 
-.sidebar-button:hover {
-    background-color: #007bb5;
-}
-
-.popup {
-    visibility: hidden;
-    width: 110px;
-    background-color: rgba(61, 252, 115, 0.806);
-    color: rgba(241, 239, 239, 0.877);
+h2 {
+    color: #ffffff;
+    margin-bottom: 15px;
     text-align: center;
-    border-radius: 15px;
-    position: absolute;
-    bottom: 10px;
-    padding: 5px;
-    opacity: 0; /* Começa com zero */
-    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
-    font-size: 12px;
+    font-family: poppins;
 }
 
-.popup.show {
-    visibility: visible;
+textarea {
+    resize: none; /* Impede o redimensionamento */
+    height: 150px; /* Altura fixa */
+    width: 550px; /* Largura fixa */
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    border: 1px solid #34495e;
+    border-radius: 4px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    outline: none;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: poppins;
+}
+
+textarea#outputText2 {
+    width: 550px; /* Largura do outputText2 */
+    height: 258px; /* Altura do outputText2 */
+    font-family: poppins;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    font-family: poppins;
+}
+
+.custom-file-upload,
+#pasteImageButton,
+.styled-button {
+    background-color: #527d99;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: inline-block;
+    text-align: center;
+    width: auto;
+    flex: 1;
+    transition: background-color 0.3s ease; /* Transição para o hover */
+    font-family: poppins;
+    font-size: 15px;
+}
+
+.custom-file-upload:hover,
+#pasteImageButton:hover,
+.styled-button:hover {
+    background-color: #2980b9;
+    font-family: poppins;
+}
+
+input[type="file"] {
+    display: none;
+    font-family: poppins;
+}
+
+#copy-popup {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #527d99;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-family: poppins;
+}
+
+#copy-popup.show {
     opacity: 1;
+    font-family: poppins;
 }
 
+#countdownContainer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center; /* Centraliza o número horizontalmente */
+    align-items: center; /* Centraliza o número verticalmente */
+    font-family: poppins;
+}
 
+#countdownNumber {
+    font-size: 3em;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0 0 10px #000000;
+    font-family: poppins;
+}
 
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .app {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .app-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 
+    textarea {
+        width: 90%; /* Ajusta a largura para telas menores */
+    }
+}
